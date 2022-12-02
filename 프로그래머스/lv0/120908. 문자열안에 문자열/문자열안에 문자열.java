@@ -5,9 +5,6 @@ class Solution {
         // 주어진 문자열 포함되어 있지 않으면 -1리턴
         int index = 0;
         index = str1.indexOf(str2);
-        if(index == -1){
-            return 2;
-        }
-        return 1;
+        return (index != -1) ? 1 : 2;
     }
 }
