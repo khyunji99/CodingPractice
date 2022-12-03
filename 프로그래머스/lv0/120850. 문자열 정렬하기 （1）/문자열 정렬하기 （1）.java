@@ -14,14 +14,6 @@ class Solution {
             answer[i] = Integer.parseInt(str[i]);
         }
         
-        // for(String num : str){
-        //     boolean flag = Pattern.matches("[0-9]",num);
-        //     if(flag){
-        //         answer[i] = Integer.parseInt(num);
-        //         i++;
-        //     }
-        // }
-        
         Arrays.sort(answer);
         return answer;
     }
