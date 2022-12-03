@@ -8,6 +8,7 @@ class Solution {
         my_string = my_string.replaceAll("i", "");
         my_string = my_string.replaceAll("o", "");
         my_string = my_string.replaceAll("u", "");
+//      my_string = my_string.replaceAll("[aeiou]", "");
         return my_string;
     }
 }
