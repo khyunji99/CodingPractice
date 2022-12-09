@@ -6,7 +6,7 @@ class Solution {
         //    공 던지는 사람이 i라고 하면 공 받는 사람은 i+2가 된다.
         // 3. 만일 i+2가 배열의 크기를 벗어나면 i+2-배열의크기 를 해주면
         //    공받을 사람의 인덱스 번호를 얻을 수 있다.
-        /*
+        
         int countNum = 0;
         int i = 0;
         int ballCatch = 0;
@@ -22,8 +22,8 @@ class Solution {
         result = ballCatch;
         
         return result;
-        */
         
-        return numbers[((k-1)*2)%numbers.length];
+        
+        //return numbers[((k-1)*2)%numbers.length];
     }
 }
