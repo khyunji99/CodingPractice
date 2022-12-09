@@ -5,9 +5,9 @@ class Solution {
         //    바로 int로 형변환해서 숫자에 더해버린다.
         // 3. 문자열 안에 남아있는 숫자 모두 이렇게 반복해서 더한다.
         my_string = my_string.replaceAll("[^0-9]", "-");
-        // 주어진 문자열 숫자 외 나머지 공백으로 대체하기
+        // 주어진 문자열 숫자 외 나머지 -으로 대체하기
         String[] numStr = my_string.split("-");
-        // 공백을 기준으로 문자열 잘라서 문자열 배열에 넣기
+        // -을 기준으로 문자열 잘라서 문자열 배열에 넣기
         int answer = 0;
         for(int i = 0; i < numStr.length; i++){
             if(numStr[i].equals(""))
