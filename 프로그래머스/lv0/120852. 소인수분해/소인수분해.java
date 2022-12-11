@@ -17,7 +17,7 @@ class Solution {
         int remainder = 1;
         while(true){
             remainder = n % i;
-            if(remainder == 0){ // 나머지 영어로하면 remainder 라고 하더라구요
+            if(remainder == 0){
                 set.add(i);
                 n = n / i;
                 if(n == 1)
