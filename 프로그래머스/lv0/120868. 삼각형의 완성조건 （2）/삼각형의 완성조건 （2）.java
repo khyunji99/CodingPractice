@@ -9,7 +9,7 @@ class Solution {
         // 2. 11, 7 외의 다른 한변이 가장 긴 변이 되는 경우
         // --> 11 < k < 11 + 7 --> 11 < k < 18(max+남은한변길이)
         // => k = 가장큰변의 길이 + 남은 한변길이 - 가장큰변길이 - 1
-        int max = 0;
+        
         int count = 0;
         
         if(sides[0] < sides[1]){
@@ -20,7 +20,6 @@ class Solution {
            // max = sides[0];
             count = sides[1] + (sides[1] - 1); // max - (max - sides[1]);
         }
-        
         
         
         
