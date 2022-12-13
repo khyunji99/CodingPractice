@@ -1,7 +1,6 @@
 import java.util.Arrays;
 class Solution {
     public int solution(String[] spell, String[] dic) {
-        String[] checkArr = new String[dic.length];
         
         int count = 0;
         for(int i = 0; i < dic.length; i++){
