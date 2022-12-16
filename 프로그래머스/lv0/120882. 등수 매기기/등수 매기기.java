@@ -34,16 +34,14 @@ class Solution {
             map.put(scoreNum[i], rank);
             rank--;
             
-//            if(scoreNum)
         }
         
-        // map = {[55 : 4], [65 : 3], [70 : 2], [75 : 1]}
+        
         int i = 0;
         for(int num : arr){
            answer[i] = map.get(num);
             i++;
         }
-        
         
         
         return answer;
