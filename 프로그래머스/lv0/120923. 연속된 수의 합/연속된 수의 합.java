@@ -12,7 +12,7 @@ class Solution {
         int pnum = 0; // 1부터 num-1 까지 모두 더한 숫자
         
         for(int i = 1; i < num; i++){ // 1부터 num-1까지 모두 더하기
-            pnum+=i;
+            pnum+=i;                  // 공식있음 : (num*(num+1))/2 = pnum
         }
         
         int x = (total - pnum) / num; // 연속되는 숫자 중 맨 처음 숫자
