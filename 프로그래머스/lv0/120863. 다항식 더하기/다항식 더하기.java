@@ -9,8 +9,10 @@ class Solution {
         // 3. poly배열 돌면서 x문자 가지고 있지 않는 경우,
         //    x문자가 없는데 문자이다 그러면 그건 상수이다. 상수는 constant 변수에 넣어준다.
         // 4. poly배열 다 돌고나면
-        //    constant가 0이면 num + "x" 리턴해주고,
-        //    constant가 0이 아니면 num + "x" + " + " + "constant" 리턴해준다.
+        //    다음의 경우에 수에 따라 리턴한다.
+        // (1) x없고 상수만 있는 경우
+        // (2) x의 계수가 1이고 상수가 있는 경우와 없는 경우
+        // (3) x의 계수가 1이 아니면서 있고 상수가 있는 경우와 없는 경우
         
         String[] poly = polynomial.split(" \\+ "); // \\ 써줘야 + 연산으로 오해 안한다!!
         int num = 0, constant = 0;
@@ -38,13 +40,13 @@ class Solution {
             else // 2) 상수항 있고 계수가 1인 경우
                 return "x" + " + " + constant;
         }else if(num == 0){
-            // 계수 없고 상수항만 있는 경우
+            // 3) 계수 없고 상수항만 있는 경우
             return String.valueOf(constant);
-        }else{
-            // 1이 아닌 계수 값이 있고 상수항 없는 경우
+        }else{ 
+            // 4) 1이 아닌 계수 값이 있고 상수항 없는 경우
             if(constant == 0)
                 return num + "x";
-            else // 1이 아닌 계수 값이 있고 상수항 있는 경우
+            else // 5) 1이 아닌 계수 값이 있고 상수항 있는 경우
                 return num + "x" + " + " + constant;
             
         }
