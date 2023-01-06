@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class P11720_숫자의합 {
     // N개의 숫자가 공백 없이 써 있다. 이 숫자를 모두 합해 출력하는 프로그램을 작성하시오.
     public static void main(String[] args) {
 
@@ -33,6 +33,12 @@ public class Main {
         }
 
         System.out.print(sumNum);
+
+
+
+        // next~() : 특정 데이터 유형의 값을 읽기 위해 사용하는함수
+        // nextLine() : 문자열, 한줄을 모두 읽기 위한 함수
+        // next() : 단일 문자(char) 읽기 위한 함수
 
 
     }
