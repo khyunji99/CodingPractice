@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class P1546_평균 {
     public static void main(String[] args){
         // 점수 변환하는 방법
         // 원래점수 / 최댓값 점수 * 100
