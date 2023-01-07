@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class P1940_주몽 {
     public static void main(String[] args) {
         // 갑옷은 2개의 재료로 만들어진다. 2가지 재료의 고유번호를 합쳐서 M이 되면 갑옷이 만들어진다.
         // N개의 재료와 M이 주어질 때 몇개의 갑옷을 만들 수 있는가
