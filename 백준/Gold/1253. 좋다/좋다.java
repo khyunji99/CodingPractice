@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
+public class P1253_좋은수 {
     public static void main(String[] args) throws NumberFormatException, IOException {
         // 주어진 N개의 수에서 다른 수의 합으로 표현되는 수가 있다면 그 수를 '좋은수' 라고 한다.
         // N개의 수중 좋은 수가 총 몇개인지 출력하라.
