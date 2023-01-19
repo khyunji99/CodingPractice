@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Stack;
 
-public class Main {
+public class P17298_오큰수 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(bf.readLine());  // N : 수열의 갯수 (수열 배열의 크기가된다.)
