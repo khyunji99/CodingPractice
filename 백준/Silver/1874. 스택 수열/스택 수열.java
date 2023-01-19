@@ -3,7 +3,7 @@ import java.util.Stack;
 
 /* stack 클래스 및 생성자 구성하기 */
 
-public class Main {
+public class P1874_스 {
 
     public static void main(String[] args) {
         // 자연수들을 스택에 넣어 주어지는 수열대로 뽑을 수 있는지 알아보고
