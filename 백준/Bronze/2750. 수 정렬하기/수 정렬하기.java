@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class 수정렬하기 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
