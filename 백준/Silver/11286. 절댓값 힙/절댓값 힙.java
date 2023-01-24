@@ -17,7 +17,7 @@ public class test {
 
             int first_abs = Math.abs(o1); // o1 = 1
             int second_abs = Math.abs(o2); // o2 = -1
-            if (first_abs == second_abs) { // 2. 절댓값이 작은 경우 음수 우선
+            if (first_abs == second_abs) { // 2. 절댓값이 같은 경우 음수 우선
                 return o1 > o2 ? 1 : -1;
                 // o1이 o2가크면 1 리턴, 아니면 -1 리턴
                 // 1, -1이 중요한게 아니라 1을 리턴한다는 것은 양수를 리턴한다는 의미이고,
