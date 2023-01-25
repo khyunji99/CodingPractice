@@ -1,4 +1,4 @@
-class Solution {
+class 중복된숫자개수 {
     public int solution(int[] array, int n) {
         int count = 0;
         
