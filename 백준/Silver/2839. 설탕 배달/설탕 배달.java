@@ -7,17 +7,19 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int sugarKg = Integer.parseInt(br.readLine());
         int result = 0;
-        while (true) {
-            if (sugarKg % 5 == 0) {
-                result += sugarKg / 5;
-                break;
+        if (sugarKg % 5 == 0) {
+            result = sugarKg / 5;
+        } else {
+            while (sugarKg > 0) {
+                sugarKg -= 3;
+                result++;
+                if (sugarKg % 5 == 0) {
+                    result += sugarKg / 5;
+                    sugarKg = 0;
+                    break;
+                }
             }
-            sugarKg -= 3;
-            result++;
-            if (sugarKg < 0) {
-                result = -1;
-                break;
-            }
+            if (sugarKg != 0) result = -1;
         }
         System.out.println(result);
         br.close();
