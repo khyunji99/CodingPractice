@@ -1,20 +1,24 @@
 import java.io.*;
-import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        br.readLine();
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
-        int N = Integer.parseInt(br.readLine());
-        String[] number = br.readLine().split(" ");
-        int[] result = new int[N];
-
-        for (int i = 0; i < N; i++) {
-            result[i] = Integer.parseInt(number[i]);
+        int maxNum = -1000001;
+        int minNum = 1000001;
+        
+        while (st.hasMoreTokens()) {
+            int value = Integer.parseInt(st.nextToken());
+            if (value > maxNum) {
+                maxNum = value;
+            }
+            if (value < minNum) {
+                minNum = value;
+            }
         }
-
-        Arrays.sort(result);
-        br.close();
-        System.out.println(result[0] + " " + result[N-1]);
+        System.out.println(minNum + " " + maxNum);
     }
 }
