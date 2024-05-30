@@ -1,19 +1,21 @@
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
+    public static void main(String args[]) throws IOException {
+
+        BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+
+        int TC = Integer.parseInt(br.readLine());
 
         StringBuilder sb = new StringBuilder();
-        int i = 1;
-        while (i < n+1) {
-            String[] ab = br.readLine().split(" ");
-            int sum = Integer.parseInt(ab[0]) + Integer.parseInt(ab[1]);
-            sb.append("Case #" + i + ": " + ab[0] + " + " + ab[1] + " = " + sum + "\n");
-            i++;
+        for (int i = 1; i <= TC; i++) {
+            String str = br.readLine();
+            sb.append("Case #").append(i).append(": ").append(str.charAt(0)-'0')
+                    .append(" + ").append(str.charAt(2)-'0').append(" = ")
+                    .append((str.charAt(0)-'0')+(str.charAt(2)-'0'))
+                    .append('\n');
         }
         System.out.println(sb);
     }
