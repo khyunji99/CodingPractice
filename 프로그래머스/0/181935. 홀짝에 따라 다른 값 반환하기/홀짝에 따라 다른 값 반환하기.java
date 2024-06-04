@@ -1,9 +1,9 @@
 class Solution {
     public int solution(int n) {
         int answer = 0;
-        for (int i = 0; i < n; i += 2) {
-            if (n % 2 == 0) answer += (int) Math.pow(i + 2, 2);
-            else answer += i + 1;
+        while (n > 0) {
+            answer += (n % 2 == 0) ? (int) Math.pow(n, 2) : n;
+            n -= 2;
         }
         return answer;
     }
