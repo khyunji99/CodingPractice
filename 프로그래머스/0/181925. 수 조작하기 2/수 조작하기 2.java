@@ -5,22 +5,18 @@ class Solution {
             int d = numLog[i+1] - numLog[i];
             
             switch (d) {
-                case 1 -> {
+                case 1 :
                     answer.append("w");
                     break;
-                }
-                case -1 -> {
+                case -1 :
                     answer.append("s");
                     break;
-                }
-                case 10 -> {
+                case 10 :
                     answer.append("d");
                     break;
-                }
-                default -> {
+                case -10 :
                     answer.append("a");
                     break;
-                }
             }
         }
         return answer.toString();
