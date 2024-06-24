@@ -3,9 +3,9 @@ class Solution {
         int temp = 0;
         int i = 0;
         int j = 0;
-        for (int n = 0; n < queries.length; n++) {
-            i = queries[n][0];
-            j = queries[n][1];
+        for (int[] query : queries) {
+            i = query[0];
+            j = query[1];
             temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
